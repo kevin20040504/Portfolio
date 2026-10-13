@@ -103,7 +103,7 @@ export const navLinks = [
 export const hero = {
   heading: "Building practical solutions through technology.",
   intro:
-    "I'm Kevin Ang, an Information Technology student at the University of Asia and the Pacific. I work on web applications, system analysis, and quality assurance, and I'm growing toward cloud engineering, cybersecurity, and DevOps. I use AI-assisted development openly while continuing to build my own technical skills.",
+    "I'm Kevin Ang, an Information Technology student at the University of Asia and the Pacific. I work on web applications, system analysis, quality assurance, and I'm growing towards cloud engineering, cybersecurity, and DevOps. I use AI-assisted development openly while continuing to build my own technical skills.",
 };
 
 /* ---------------------------------------------------------------------------
