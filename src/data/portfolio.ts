@@ -46,7 +46,7 @@ export const site = {
 
   // Your live address on Vercel. If you rename the domain in Vercel, update it here too.
   // Used for SEO and link previews on LinkedIn, Messenger, etc.
-  url: "https://portfolio-umber-iota-43.vercel.app",
+  url: "https://kevinangportfolio.vercel.app",
 
   email: "kevin.enrico.ang@gmail.com",
   location: "Pasig City, Philippines",
