@@ -44,8 +44,7 @@ kevin-portfolio/
 │  └─ images/
 │     ├─ certificates/             ← certificate images / PDFs
 │     └─ projects/
-│        ├─ study-buddy/
-│        ├─ aws-moderation/
+│        ├─ athletesync/
 │        ├─ homefurgood/
 │        └─ tmcc-asrms/            ← one folder per project
 ├─ src/
@@ -75,7 +74,7 @@ that tells you the exact path to use.
 
 1. Take the screenshot (PNG or JPG, about **1600 × 1000 px / 16:10** works best).
 2. Save it in the project's folder using the name shown on the placeholder, e.g.
-   `public/images/projects/study-buddy/homepage.png`
+   `public/images/projects/homefurgood/landing-page.png`
 3. Refresh the page. It appears automatically.
 
 **To add more screenshots, rename them, or change captions,** edit the project's `screenshots` list in
@@ -83,9 +82,9 @@ that tells you the exact path to use.
 
 ```ts
 screenshots: [
-  { src: "/images/projects/study-buddy/homepage.png", caption: "Homepage" },
-  { src: "/images/projects/study-buddy/quiz.png", caption: "Quiz page" },          // ← new
-  { src: "/images/projects/study-buddy/erd.png", caption: "Database design", alt: "Entity relationship diagram of the users, subjects and sessions tables" },
+  { src: "/images/projects/homefurgood/landing-page.png", caption: "Landing page" },
+  { src: "/images/projects/homefurgood/search.png", caption: "Search results" },     // ← new
+  { src: "/images/projects/homefurgood/erd.png", caption: "Database design", alt: "Entity relationship diagram of the pets, shelters and applications tables" },
 ],
 ```
 
@@ -106,9 +105,9 @@ screenshots: [
    paste it above the comment (remove the `/*` and `*/`), and fill it in.
 3. Key fields:
    - `slug`: lowercase with hyphens. The page will be at `/projects/my-new-project`.
-   - `category`: `"Web Development"`, `"Cloud & AWS"`, or `"System Development"`. (To add a new category, add it
+   - `category`: `"Personal Project"`, `"Web Development"`, or `"System Development"`. (To add a new category, add it
      to `ProjectCategory` in `src/data/types.ts` **and** to `projectFilters` in `portfolio.ts`.)
-   - `status`: `"Completed"`, `"In Progress"`, `"Academic Project"`, or `"Capstone Project"`.
+   - `status`: `"Completed"`, `"In Development"`, `"Academic Project"`, or `"Capstone Project"`.
    - `features[].state`: `"implemented"`, `"in-progress"`, or `"planned"`. Planned features are clearly labelled
      as not built yet.
    - `links.github` / `links.demo`: full URLs, or `""` to hide the button.
@@ -193,19 +192,14 @@ appears after you push it (which triggers a rebuild). In `npm run dev` it appear
 - [x] Real site URL after deploying (`site.url`)
 - [ ] Set `site.showPlaceholders` to `false` before sharing
 
-**Study Buddy**
-- [ ] Technologies actually used
-- [ ] Problem statement, objectives, features, your role, technical implementation, challenges, takeaways
-- [ ] Screenshots: `homepage.png`, `main-interface.png`, `features.png`, `additional-page.png`
-- [ ] GitHub / demo links (if public)
-
-**AWS Image Content Moderation**
-- [ ] Specific AWS services used (replace the single `"AWS"` tag)
-- [ ] Remaining objectives, architecture components (features), your role, implementation, challenges, takeaways
-- [ ] Screenshots: `architecture-diagram.png`, `aws-console.png`, `workflow.png`, `components.png`
+**AthleteSync**
+- [x] Screenshots (from the repository's docs/screenshots)
+- [x] Technologies and features checked against the repository code
+- [ ] Your own role (replace the TODO under `role`) and key takeaways
+- [ ] Live demo link, once it is deployed
 
 **HomeFurGood**
-- [ ] Tech stack, your role, implementation
+- [ ] Tech stack, your role, implementation (no repository linked yet)
 - [ ] Update each feature's `state` as you build it
 - [ ] Screenshots: `landing-page.png`, `pet-listings.png`, `shelter-profiles.png`, `map-view.png`, `adoption-application.png`
 

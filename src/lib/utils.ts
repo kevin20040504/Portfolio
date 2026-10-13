@@ -31,7 +31,7 @@ export const button = {
 
 export const statusStyles: Record<ProjectStatus, string> = {
   Completed: "border-emerald-400/25 bg-emerald-400/10 text-emerald-300",
-  "In Progress": "border-amber-400/25 bg-amber-400/10 text-amber-300",
+  "In Development": "border-amber-400/25 bg-amber-400/10 text-amber-300",
   "Academic Project": "border-sky-400/25 bg-sky-400/10 text-sky-300",
   "Capstone Project": "border-violet-400/25 bg-violet-400/10 text-violet-300",
 };

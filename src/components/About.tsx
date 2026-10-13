@@ -10,7 +10,7 @@ export function About() {
     { label: "University", value: `${site.education.school} (${site.education.schoolShort})` },
     { label: "Expected graduation", value: site.education.graduation },
     { label: "Location", value: site.location },
-    { label: "Interests", value: site.interests.join(", ") },
+    { label: "Career interests", value: site.interests.join(", ") },
   ];
 
   return (

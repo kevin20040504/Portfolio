@@ -103,11 +103,11 @@ function CodeCard() {
             {"\n  "}
             <span className={p}>interests</span>: [
             {"\n    "}
-            <span className={s}>&quot;web development&quot;</span>,
+            <span className={s}>&quot;cloud engineering&quot;</span>,
             {"\n    "}
-            <span className={s}>&quot;software QA&quot;</span>,
+            <span className={s}>&quot;cybersecurity&quot;</span>,
             {"\n    "}
-            <span className={s}>&quot;system analysis&quot;</span>,
+            <span className={s}>&quot;DevOps&quot;</span>,
             {"\n  "}],
             {"\n  "}
             <span className={p}>usesAI</span>: <span className={s}>&quot;to learn, not to skip learning&quot;</span>,

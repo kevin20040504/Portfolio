@@ -21,9 +21,12 @@ export function ProjectCard({ project, priority }: { project: ResolvedProject; p
             priority={priority}
           />
         </div>
-        <StatusBadge status={project.status} className="absolute top-3 left-3 bg-canvas/70" />
+        {/* Dark backing keeps the badge readable over bright screenshots. */}
+        <span className="absolute top-3 left-3 rounded-full bg-canvas/90">
+          <StatusBadge status={project.status} />
+        </span>
         {shots > 0 && (
-          <span className="absolute top-3 right-3 inline-flex items-center gap-1.5 rounded-full border border-line-strong bg-canvas/70 px-2.5 py-1 text-xs text-muted backdrop-blur-sm">
+          <span className="absolute top-3 right-3 inline-flex items-center gap-1.5 rounded-full border border-line-strong bg-canvas/90 px-2.5 py-1 text-xs text-muted backdrop-blur-sm">
             <Images className="size-3.5" aria-hidden="true" />
             {shots}
           </span>

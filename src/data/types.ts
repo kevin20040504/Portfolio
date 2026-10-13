@@ -6,15 +6,15 @@
 
 export type ProjectStatus =
   | "Completed"
-  | "In Progress"
+  | "In Development"
   | "Academic Project"
   | "Capstone Project";
 
 /** Used by the project filter buttons. Add a new category here AND in `projectFilters`. */
-export type ProjectCategory = "Web Development" | "Cloud & AWS" | "System Development";
+export type ProjectCategory = "Personal Project" | "Web Development" | "System Development";
 
 export interface ProjectImage {
-  /** Path inside the `public` folder, e.g. "/images/projects/study-buddy/homepage.png" */
+  /** Path inside the `public` folder, e.g. "/images/projects/athletesync/dashboard.png" */
   src: string;
   /** Short caption shown under the image and in the full-screen viewer. */
   caption: string;
