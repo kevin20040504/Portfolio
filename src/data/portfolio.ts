@@ -44,9 +44,9 @@ export const site = {
   description:
     "Portfolio of Kevin Ang, an Information Technology student at the University of Asia and the Pacific interested in web development, software quality assurance, and system analysis.",
 
-  // TODO: After deploying, replace with your real address, e.g. "https://kevinang.vercel.app".
+  // Your live address on Vercel. If you rename the domain in Vercel, update it here too.
   // Used for SEO and link previews on LinkedIn, Messenger, etc.
-  url: "https://kevin-ang-portfolio.vercel.app",
+  url: "https://portfolio-umber-iota-43.vercel.app",
 
   email: "kevin.enrico.ang@gmail.com",
   location: "Pasig City, Philippines",
@@ -81,8 +81,8 @@ export const site = {
 export const socials = {
   // TODO: Paste your full LinkedIn URL, e.g. "https://www.linkedin.com/in/your-name/"
   linkedin: "",
-  // TODO: Paste your full GitHub URL, e.g. "https://github.com/your-username"
-  github: "",
+  // Your GitHub profile.
+  github: "https://github.com/kevin20040504",
 };
 
 export const navLinks = [

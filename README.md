@@ -189,8 +189,8 @@ appears after you push it (which triggers a rebuild). In `npm run dev` it appear
 **General**
 - [ ] Add CV: `public/cv/Kevin-Ang-CV.pdf`
 - [ ] LinkedIn URL (`socials.linkedin`)
-- [ ] GitHub URL (`socials.github`)
-- [ ] Real site URL after deploying (`site.url`)
+- [x] GitHub URL (`socials.github`)
+- [x] Real site URL after deploying (`site.url`)
 - [ ] Set `site.showPlaceholders` to `false` before sharing
 
 **Study Buddy**
