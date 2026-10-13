@@ -187,8 +187,8 @@ appears after you push it (which triggers a rebuild). In `npm run dev` it appear
 ## 10. Placeholder checklist
 
 **General**
-- [ ] Add CV: `public/cv/Kevin-Ang-CV.pdf`
-- [ ] LinkedIn URL (`socials.linkedin`)
+- [x] Add CV: `public/cv/Kevin-Ang-CV.pdf`
+- [x] LinkedIn URL (`socials.linkedin`)
 - [x] GitHub URL (`socials.github`)
 - [x] Real site URL after deploying (`site.url`)
 - [ ] Set `site.showPlaceholders` to `false` before sharing
@@ -210,17 +210,18 @@ appears after you push it (which triggers a rebuild). In `npm run dev` it appear
 - [ ] Screenshots: `landing-page.png`, `pet-listings.png`, `shelter-profiles.png`, `map-view.png`, `adoption-application.png`
 
 **TMCC ASRMS**
-- [ ] Confirm the year
-- [ ] Your other contributions, challenges, takeaways
+- [x] Confirm the year
+- [ ] Challenges and takeaways
 - [ ] Review the technologies and features lists for accuracy
-- [ ] Screenshots: `dashboard.png`, `records-management.png`, `user-management.png`, `database-design.png`, `system-architecture.png`
-- [ ] Repository link, only if public and your team agrees
+- [x] Screenshots (taken from a local run with fictional demo data)
+- [ ] Optional: database design (ERD) and system architecture diagrams
+- [x] Repository link
 
 **Certifications**
 - [x] All six certificates added with images and PDFs
 - [x] UA&P email hidden on the Alison images; Alison PDFs not published
 
 **Experience & Leadership**
-- [ ] Years on the UA&P Men's Basketball Team
-- [ ] One specific responsibility or moment as co-captain
+- [x] Years on the UA&P Men's Basketball Team
+- [x] Awards as co-captain
 - [ ] Add internships here as `type: "Internship"` when you have them (the "Looking for my first IT internship" card then disappears automatically)

@@ -79,8 +79,8 @@ export const site = {
 };
 
 export const socials = {
-  // TODO: Paste your full LinkedIn URL, e.g. "https://www.linkedin.com/in/your-name/"
-  linkedin: "",
+  // Your LinkedIn profile.
+  linkedin: "https://www.linkedin.com/in/kevin-ang-118a99321/",
   // Your GitHub profile.
   github: "https://github.com/kevin20040504",
 };
@@ -195,7 +195,7 @@ export const projects: Project[] = [
     context: "Academic project · University of Asia and the Pacific",
     status: "Academic Project",
     summary:
-      "A web-based study-support platform designed to help students with their learning needs.",
+      "A web project concept that helps UA&P students find tutoring and study support from other students on campus.",
     cover: {
       src: "/images/projects/study-buddy/homepage.png",
       caption: "Study Buddy homepage",
@@ -209,7 +209,7 @@ export const projects: Project[] = [
     // TODO: List the technologies you actually used, e.g. ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
     technologies: [],
     overview:
-      "Study Buddy is a web-based study-support platform built as an academic project at UA&P. It is designed to help students with their learning needs in one place.",
+      "Study Buddy is a web project concept built for a web development class at UA&P. It helps students find tutoring and study support from other students on campus.",
     problem:
       "TODO: Describe the problem Study Buddy addresses, e.g. what makes it hard for students to get study help today.",
     objectives: ["TODO: List 2–4 goals of the project, e.g. what students should be able to do with it."],
@@ -340,32 +340,53 @@ export const projects: Project[] = [
     title: "TMCC Automated Student Records Management System",
     fullTitle:
       "Trece Martires City College Automated Student Records Management System (TMCC ASRMS)",
-    // TODO: Confirm the year(s), e.g. "2025–2026"
-    year: "2026",
+    year: "2025–2026",
     category: "System Development",
-    context: "Capstone project · Team project for Trece Martires City College",
+    context: "Academic capstone · Team project for Trece Martires City College",
     status: "Capstone Project",
     summary:
       "A centralized student records management system that reduces the registrar's reliance on manual filing and spreadsheet-based indexing.",
     cover: {
-      src: "/images/projects/tmcc-asrms/dashboard.png",
-      caption: "Dashboard",
+      src: "/images/projects/tmcc-asrms/records-management.png",
+      caption: "Registrar staff view of student records",
     },
+    // Screenshots taken from a local copy of the system, filled with fictional demo students.
+    // To add diagrams later, save them here and add lines like:
+    // { src: "/images/projects/tmcc-asrms/database-design.png", caption: "Database design (ERD)" },
     screenshots: [
-      { src: "/images/projects/tmcc-asrms/dashboard.png", caption: "Dashboard" },
       {
         src: "/images/projects/tmcc-asrms/records-management.png",
-        caption: "Student records management",
-      },
-      { src: "/images/projects/tmcc-asrms/user-management.png", caption: "User management" },
-      {
-        src: "/images/projects/tmcc-asrms/database-design.png",
-        caption: "Database design (ERD)",
+        caption: "Manage Records: registrar staff search and filter student records",
       },
       {
-        src: "/images/projects/tmcc-asrms/system-architecture.png",
-        caption: "System architecture",
+        src: "/images/projects/tmcc-asrms/student-record.png",
+        caption: "Student record: personal details, program, GWA and units completed",
       },
+      {
+        src: "/images/projects/tmcc-asrms/pending-requests.png",
+        caption: "Transcript requests: staff approve or reject student document requests",
+      },
+      {
+        src: "/images/projects/tmcc-asrms/curriculum.png",
+        caption: "Program curriculum with units and prerequisites",
+      },
+      {
+        src: "/images/projects/tmcc-asrms/admin-dashboard.png",
+        caption: "Admin dashboard: user and request totals with recent activity",
+      },
+      {
+        src: "/images/projects/tmcc-asrms/user-management.png",
+        caption: "User management for staff and admin accounts",
+      },
+      {
+        src: "/images/projects/tmcc-asrms/student-dashboard.png",
+        caption: "Student portal: GWA, units, and document request status",
+      },
+      {
+        src: "/images/projects/tmcc-asrms/academic-records.png",
+        caption: "Student academic records with grades and report card download",
+      },
+      { src: "/images/projects/tmcc-asrms/login.png", caption: "Login page" },
     ],
     // Taken from the project's package.json and composer.json. Edit if needed.
     technologies: [
@@ -381,7 +402,7 @@ export const projects: Project[] = [
       "PHPUnit",
     ],
     overview:
-      "A web-based system for the registrar's office of Trece Martires City College, developed as our capstone project. It brings student records, enrollment, grades, and document requests into one centralized system.",
+      "A web-based system for the registrar's office of Trece Martires City College, a college serving approximately 3,000–4,000 students, developed as our capstone project. It brings student records, enrollment, grades, and document requests into one centralized system.",
     problem:
       "The registrar's office relied on manual filing and spreadsheet-based indexing to manage student records, which limits efficiency when records need to be found, updated, or released.",
     objectives: [
@@ -424,19 +445,27 @@ export const projects: Project[] = [
         state: "implemented",
       },
       {
-        name: "Registrar curriculum builder",
-        state: "in-progress",
+        name: "Curriculum builder",
+        description: "Registrar staff create, edit, and clone program curricula.",
+        state: "implemented",
+      },
+      {
+        name: "Reports and audit logging",
+        description: "Administrators view reports and a log of system activity.",
+        state: "implemented",
       },
     ],
     role: [
+      "Worked as System Analyst and AI-assisted developer on the team.",
+      "Designed role-based functions for students, registrar staff, and administrators, including record management, document requests, approvals, reports, and audit logging.",
       "Implemented curriculum validation for enrollment, so a student can only be enrolled in subjects that belong to their program and term.",
       "Worked on showing subject prerequisite information to registrar staff when editing a student's enrollment.",
-      "TODO: Add your other contributions (e.g. pages you built, testing, documentation, client meetings).",
+      "Applied system analysis, quality assurance, troubleshooting, and documentation throughout development.",
     ],
     implementation: [
       "The front end is a React single-page application that talks to a Laravel REST API through Axios. Authentication uses Laravel Sanctum, and every group of API routes is protected by role-checking middleware.",
       "Data is stored in MySQL, with the schema defined through Laravel migrations. Enrollment rules, such as curriculum membership and prerequisites, are implemented as separate validation rules and covered by PHPUnit feature tests.",
-      "The system is proposed to run on the local network of the registrar's office.",
+      "The team followed an Iterative and Incremental SDLC approach, delivering and refining the system in stages. The system is proposed to run on the local network of the registrar's office.",
     ],
     challenges: [
       // TODO: Add real challenges you faced. Example:
@@ -444,7 +473,7 @@ export const projects: Project[] = [
     ],
     takeaways: ["TODO: What did the capstone teach you about building systems for real users?"],
     links: {
-      github: "", // TODO: Add only if the repository is public and your team agrees
+      github: "https://github.com/s3ryz000/TMCC-ASRMS",
       demo: "",
     },
   },
@@ -515,7 +544,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Tools & Development Practices",
     icon: "wrench",
     description: "The tools I use day to day.",
-    skills: ["Git", "GitHub", "VS Code", "AI-assisted development"],
+    skills: ["Git", "GitHub", "VS Code", "Apache NetBeans", "XAMPP", "AI-assisted development"],
   },
 ];
 
@@ -591,17 +620,16 @@ export const certifications: Certification[] = [
 
 export const experience: ExperienceItem[] = [
   {
-    role: "Co-Captain",
+    role: "Student-Athlete and Co-Captain",
     organization: "UA&P Men's Basketball Team",
     type: "Leadership",
-    // TODO: Add your years on the team, e.g. "2023 – Present"
-    period: "TODO: Add years",
+    period: "2023 – Present",
     description:
       "Help lead the team as a co-captain while balancing training and competition with a full IT course load.",
     highlights: [
       "Support teammates on and off the court and help keep the team focused on shared goals.",
       "Act as a link between players and coaches and take accountability for the team's preparation.",
-      "TODO: Add a specific responsibility or moment you're proud of (no need to exaggerate).",
+      "Awards: Rookie of the Year (2023–2024) and Most Improved Player (2024–2025).",
     ],
     skills: [
       "Teamwork",
@@ -616,7 +644,7 @@ export const experience: ExperienceItem[] = [
     role: "Capstone Project Team Member",
     organization: "TMCC ASRMS · Capstone project",
     type: "Academic Collaboration",
-    period: "2026",
+    period: "2025 – 2026",
     description:
       "Worked in a development team to build a student records management system for the registrar's office of Trece Martires City College.",
     highlights: [
